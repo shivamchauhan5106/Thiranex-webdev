@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Laptop bag">
+  <rect width="320" height="240" fill="#f4f6f8"/>
+  <rect x="80" y="60" width="160" height="130" rx="10" fill="#0056b3"/>
+  <rect x="95" y="75" width="130" height="90" rx="4" fill="#e8f0fb"/>
+  <path d="M130 60 Q160 35 190 60" fill="none" stroke="#003d82" stroke-width="6"/>
+</svg>

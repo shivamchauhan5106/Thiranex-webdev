@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Mechanical keyboard">
+  <rect width="320" height="240" fill="#f4f6f8"/>
+  <rect x="40" y="80" width="240" height="100" rx="8" fill="#1a1a2e"/>
+  <rect x="55" y="95" width="20" height="20" rx="3" fill="#0056b3"/>
+  <rect x="80" y="95" width="20" height="20" rx="3" fill="#0d7377"/>
+  <rect x="105" y="95" width="20" height="20" rx="3" fill="#0056b3"/>
+  <rect x="130" y="95" width="20" height="20" rx="3" fill="#0d7377"/>
+  <rect x="155" y="95" width="20" height="20" rx="3" fill="#0056b3"/>
+  <rect x="180" y="95" width="20" height="20" rx="3" fill="#0d7377"/>
+  <rect x="205" y="95" width="20" height="20" rx="3" fill="#0056b3"/>
+  <rect x="230" y="95" width="20" height="20" rx="3" fill="#0d7377"/>
+</svg>

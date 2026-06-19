@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="USB hub">
+  <rect width="320" height="240" fill="#e8f0fb"/>
+  <rect x="70" y="90" width="180" height="60" rx="8" fill="#0d7377"/>
+  <rect x="85" y="105" width="12" height="30" fill="#fff"/>
+  <rect x="105" y="105" width="12" height="30" fill="#fff"/>
+  <rect x="125" y="105" width="12" height="30" fill="#fff"/>
+  <rect x="145" y="105" width="20" height="30" fill="#fff"/>
+  <rect x="175" y="105" width="12" height="30" fill="#fff"/>
+  <rect x="195" y="105" width="12" height="30" fill="#fff"/>
+  <rect x="215" y="105" width="20" height="30" fill="#fff"/>
+</svg>
