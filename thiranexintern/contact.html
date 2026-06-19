@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Shivam Chauhan — web developer intern at Thiranex. Reach out about projects, collaborations, or opportunities.">
+  <meta name="author" content="Shivam Chauhan">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shivamchauhan.dev/contact.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Shivam Chauhan — Web Developer">
+  <meta property="og:description" content="Get in touch for freelance projects, collaborations, or job opportunities.">
+  <meta property="og:url" content="https://shivamchauhan.dev/contact.html">
+
+  <title>Contact | Shivam Chauhan — Web Developer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Shivam Chauhan — Home">
+        Shivam Chauhan
+      </a>
+      <nav class="site-nav" role="navigation" aria-label="Primary navigation">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="about.html" class="site-nav__link">About</a></li>
+          <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+          <li><a href="contact.html" class="site-nav__link" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <div class="container">
+      <header class="section__header">
+        <p class="section__subtitle">Get In Touch</p>
+        <h1>Contact Me</h1>
+        <p>
+          Have a project in mind or want to discuss an opportunity? Fill out the form below
+          and I'll respond within 2 business days.
+        </p>
+      </header>
+
+      <section class="section" aria-labelledby="contact-form-heading">
+        <h2 id="contact-form-heading" class="sr-only">Contact Form</h2>
+
+        <div
+          id="form-status"
+          class="form__status"
+          aria-hidden="true"
+          aria-live="polite"
+        ></div>
+
+        <form
+          id="contact-form"
+          class="form"
+          action="#"
+          method="post"
+          novalidate
+          aria-describedby="form-instructions"
+        >
+          <p id="form-instructions" class="form__hint">
+            Fields marked with <span class="form__required" aria-hidden="true">*</span>
+            <span class="sr-only">(asterisk)</span> are required.
+          </p>
+
+          <div class="form__group">
+            <label for="name" class="form__label">
+              Full Name <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form__input"
+              required
+              autocomplete="name"
+              aria-required="true"
+              aria-describedby="name-hint name-error"
+            >
+            <p id="name-hint" class="form__hint">Enter your first and last name.</p>
+            <p id="name-error" class="form__error" role="alert"></p>
+          </div>
+
+          <div class="form__group">
+            <label for="email" class="form__label">
+              Email Address <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form__input"
+              required
+              autocomplete="email"
+              inputmode="email"
+              aria-required="true"
+              aria-describedby="email-hint email-error"
+            >
+            <p id="email-hint" class="form__hint">We'll never share your email with anyone else.</p>
+            <p id="email-error" class="form__error" role="alert"></p>
+          </div>
+
+          <div class="form__group">
+            <label for="subject" class="form__label">
+              Subject <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <select
+              id="subject"
+              name="subject"
+              class="form__select"
+              required
+              aria-required="true"
+              aria-describedby="subject-error"
+            >
+              <option value="">Select a subject…</option>
+              <option value="freelance">Freelance Project</option>
+              <option value="fulltime">Full-Time Opportunity</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="speaking">Speaking Engagement</option>
+              <option value="other">Other</option>
+            </select>
+            <p id="subject-error" class="form__error" role="alert"></p>
+          </div>
+
+          <div class="form__group">
+            <label for="message" class="form__label">
+              Message <span class="form__required" aria-hidden="true">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              class="form__textarea"
+              rows="6"
+              required
+              aria-required="true"
+              aria-describedby="message-hint message-error"
+            ></textarea>
+            <p id="message-hint" class="form__hint">Minimum 10 characters. Describe your inquiry in detail.</p>
+            <p id="message-error" class="form__error" role="alert"></p>
+          </div>
+
+          <button type="submit" class="btn btn--primary">
+            Send Message
+          </button>
+        </form>
+      </section>
+
+      <aside class="section" aria-labelledby="contact-info-heading">
+        <h2 id="contact-info-heading">Other Ways to Reach Me</h2>
+        <address style="font-style: normal;">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:shivamchauhan@gmail.com">shivamchauhan@gmail.com</a>
+          </p>
+          <p>
+            <strong>Location:</strong> India (Open to remote opportunities)
+          </p>
+        </address>
+        <nav aria-label="Social media links">
+          <ul class="skills-list" role="list">
+            <li class="skills-list__item">
+              <a href="https://github.com/shivamchauhan" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li class="skills-list__item">
+              <a href="https://linkedin.com/in/shivamchauhan" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li class="skills-list__item">
+              <a href="https://twitter.com/shivamchauhan" rel="noopener noreferrer">Twitter</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">&copy; 2026 Shivam Chauhan. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="site-footer__nav-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="https://github.com/shivamchauhan" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/shivamchauhan" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/form-validation.js" defer></script>
+</body>
+</html>
