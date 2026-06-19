@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Smartphone">
+  <rect width="320" height="240" fill="#f4f6f8"/>
+  <rect x="115" y="25" width="90" height="190" rx="12" fill="#1a1a2e"/>
+  <rect x="123" y="40" width="74" height="150" fill="#0056b3"/>
+  <circle cx="160" cy="200" r="6" fill="#4a4a68"/>
+</svg>

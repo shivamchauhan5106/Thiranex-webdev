@@ -1,0 +1,97 @@
+/** Product catalog data — modular e-commerce source */
+export const categories = [
+  { id: "all", label: "All Products" },
+  { id: "audio", label: "Audio" },
+  { id: "computing", label: "Computing" },
+  { id: "mobile", label: "Mobile" },
+  { id: "accessories", label: "Accessories" },
+];
+
+export const products = [
+  {
+    id: "wh-100",
+    name: "Thiranex AirPods Pro",
+    category: "audio",
+    price: 2499,
+    rating: 4.6,
+    inStock: true,
+    image: "assets/products/headphones.svg",
+    description:
+      "Active noise cancellation, 30-hour battery life, and ergonomic fit. Perfect for focused coding sessions.",
+    specs: { battery: "30 hrs", weight: "58g", connectivity: "Bluetooth 5.3" },
+  },
+  {
+    id: "kb-mechanical",
+    name: "DevKey Mechanical Keyboard",
+    category: "computing",
+    price: 3999,
+    rating: 4.8,
+    inStock: true,
+    image: "assets/products/keyboard.svg",
+    description:
+      "Hot-swappable switches, RGB backlight, and compact 75% layout built for developers.",
+    specs: { switches: "Red linear", layout: "75%", connection: "USB-C" },
+  },
+  {
+    id: "mon-27",
+    name: "ClearView 27\" Monitor",
+    category: "computing",
+    price: 14999,
+    rating: 4.5,
+    inStock: true,
+    image: "assets/products/monitor.svg",
+    description:
+      "1440p IPS panel with 144Hz refresh rate. Ideal for design work and multi-window development.",
+    specs: { resolution: "2560×1440", refresh: "144Hz", panel: "IPS" },
+  },
+  {
+    id: "phone-x",
+    name: "NovaPhone X",
+    category: "mobile",
+    price: 24999,
+    rating: 4.4,
+    inStock: true,
+    image: "assets/products/phone.svg",
+    description:
+      "Flagship performance with 256GB storage, 50MP camera, and all-day battery for on-the-go productivity.",
+    specs: { storage: "256GB", camera: "50MP", battery: "5000mAh" },
+  },
+  {
+    id: "hub-usb",
+    name: "ConnectHub USB-C Dock",
+    category: "accessories",
+    price: 1899,
+    rating: 4.3,
+    inStock: true,
+    image: "assets/products/hub.svg",
+    description:
+      "7-in-1 hub with HDMI, SD card reader, and 100W pass-through charging for laptop setups.",
+    specs: { ports: "7", power: "100W PD", hdmi: "4K@60Hz" },
+  },
+  {
+    id: "bag-laptop",
+    name: "CodePack Laptop Bag",
+    category: "accessories",
+    price: 1299,
+    rating: 4.7,
+    inStock: false,
+    image: "assets/products/bag.svg",
+    description:
+      "Water-resistant backpack with padded 16\" laptop compartment and cable organization pockets.",
+    specs: { capacity: "22L", laptop: 'Up to 16"', material: "Recycled nylon" },
+  },
+];
+
+export function getProductById(id) {
+  return products.find(function (product) {
+    return product.id === id;
+  });
+}
+
+export function formatPrice(amount) {
+  return new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+    maximumFractionDigits: 0,
+  }).format(amount);
+}

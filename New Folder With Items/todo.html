@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shivam Chauhan's interactive To-Do List — CRUD task manager with localStorage persistence and filtering.">
+  <meta name="author" content="Shivam Chauhan">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shivamchauhan.dev/todo.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="To-Do List | Shivam Chauhan">
+  <meta property="og:description" content="Interactive task manager with CRUD, filtering, and localStorage persistence.">
+  <meta property="og:url" content="https://shivamchauhan.dev/todo.html">
+
+  <title>To-Do List | Shivam Chauhan — Web Developer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Shivam Chauhan — Home">
+        Shivam Chauhan
+      </a>
+      <nav class="site-nav" role="navigation" aria-label="Primary navigation">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="about.html" class="site-nav__link">About</a></li>
+          <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+          <li><a href="todo.html" class="site-nav__link">To-Do</a></li>
+          <li><a href="weather.html" class="site-nav__link">Weather</a></li>
+          <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <div class="container">
+      <header class="section__header">
+        <p class="section__subtitle">Task Manager</p>
+        <h1>To-Do List</h1>
+        <p>
+          Add, edit, complete, and delete tasks. Your list is saved automatically
+          in the browser and persists across reloads.
+        </p>
+      </header>
+
+      <section
+        id="todo-app"
+        class="todo-app"
+        aria-labelledby="todo-heading"
+      >
+        <h2 id="todo-heading" class="sr-only">Task list controls</h2>
+
+        <div id="todo-live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+        <form id="todo-form" class="todo-form" aria-label="Add a new task">
+          <label for="todo-input" class="form__label">New task</label>
+          <div class="todo-form__row">
+            <input
+              type="text"
+              id="todo-input"
+              class="form__input todo-form__input"
+              name="task"
+              placeholder="What needs to be done?"
+              maxlength="200"
+              autocomplete="off"
+              required
+              aria-describedby="todo-input-hint"
+            >
+            <button type="submit" class="btn btn--primary">Add Task</button>
+          </div>
+          <p id="todo-input-hint" class="form__hint">Press Enter or click Add Task to create a task.</p>
+        </form>
+
+        <div
+          id="todo-filters"
+          class="todo-filters"
+          role="group"
+          aria-label="Filter tasks"
+        >
+          <button type="button" class="todo-filter" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="todo-filter" data-filter="active" aria-pressed="false">Active</button>
+          <button type="button" class="todo-filter" data-filter="completed" aria-pressed="false">Completed</button>
+        </div>
+
+        <p id="todo-stats" class="todo-stats" aria-live="polite">0 active, 0 completed, 0 total</p>
+
+        <p id="todo-empty" class="todo-empty" hidden>No tasks to show for this filter.</p>
+
+        <ul id="todo-list" class="todo-list" role="list" aria-label="Tasks"></ul>
+
+        <button
+          type="button"
+          id="todo-clear-completed"
+          class="btn btn--secondary todo-clear"
+          hidden
+        >
+          Clear completed tasks
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">&copy; 2026 Shivam Chauhan. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="site-footer__nav-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="todo.html" aria-current="page">To-Do</a></li>
+          <li><a href="weather.html">Weather</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/shivamchauhan" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/shivamchauhan" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/todo-app.js" defer></script>
+</body>
+</html>

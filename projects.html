@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Shivam Chauhan's portfolio of web development projects — portfolio site, task tracker, weather app, and more."
+    />
+    <meta name="author" content="Shivam Chauhan" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://shivamchauhan.dev/projects.html" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Projects | Shivam Chauhan — Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of accessible, performant web development projects."
+    />
+    <meta property="og:url" content="https://shivamchauhan.dev/projects.html" />
+
+    <title>Projects | Shivam Chauhan — Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container site-header__inner">
+        <a href="index.html" class="site-logo" aria-label="Shivam Chauhan — Home">
+          Shivam Chauhan
+        </a>
+        <nav class="site-nav" role="navigation" aria-label="Primary navigation">
+          <ul class="site-nav__list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="about.html" class="site-nav__link">About</a></li>
+            <li>
+              <a href="projects.html" class="site-nav__link" aria-current="page"
+                >Projects</a
+              >
+            </li>
+            <li><a href="todo.html" class="site-nav__link">To-Do</a></li>
+            <li><a href="weather.html" class="site-nav__link">Weather</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" role="main">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__subtitle">Portfolio</p>
+          <h1>Selected Projects</h1>
+          <p>
+            Projects I've built during my Thiranex internship and personal learning —
+            all focused on semantic HTML, accessibility, and modern web standards.
+          </p>
+        </header>
+
+        <section class="section" aria-labelledby="projects-list-heading">
+          <h2 id="projects-list-heading" class="sr-only">Project List</h2>
+          <ul class="card-grid card-grid--three" role="list">
+            <li>
+              <article
+                class="card"
+                id="personal-portfolio"
+                aria-labelledby="proj-1-title"
+              >
+                <h3 class="card__title" id="proj-1-title">
+                  Personal Portfolio Website
+                </h3>
+                <p>
+                  Multi-page portfolio with semantic HTML5 landmarks, ARIA labels,
+                  SEO meta tags, and a fully accessible contact form. Achieves 100
+                  on Lighthouse Accessibility and SEO audits.
+                </p>
+                <ul
+                  class="skills-list"
+                  role="list"
+                  aria-label="Technologies used"
+                >
+                  <li class="skills-list__item">HTML5</li>
+                  <li class="skills-list__item">CSS3</li>
+                  <li class="skills-list__item">JavaScript</li>
+                </ul>
+                <p style="margin-top: 1rem">
+                  <a
+                    href="https://github.com/shivamchauhan/thiranexintern"
+                    class="card__link"
+                    rel="noopener noreferrer"
+                  >
+                    View source on GitHub
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li>
+              <article
+                class="card"
+                id="task-tracker"
+                aria-labelledby="proj-2-title"
+              >
+                <h3 class="card__title" id="proj-2-title">
+                  Thiranex Task Tracker
+                </h3>
+                <p>
+                  Intern project management tool with keyboard-navigable task lists,
+                  status filters, and ARIA live regions that announce updates to
+                  screen readers.
+                </p>
+                <ul
+                  class="skills-list"
+                  role="list"
+                  aria-label="Technologies used"
+                >
+                  <li class="skills-list__item">HTML5</li>
+                  <li class="skills-list__item">CSS Grid</li>
+                  <li class="skills-list__item">Local Storage</li>
+                </ul>
+                <p style="margin-top: 1rem">
+                  <a
+                    href="todo.html"
+                    class="card__link"
+                  >
+                    Open live app
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li>
+              <article
+                class="card"
+                id="weather-app"
+                aria-labelledby="proj-3-title"
+              >
+                <h3 class="card__title" id="proj-3-title">
+                  Weather Forecast App
+                </h3>
+                <p>
+                  Location-aware weather app using the OpenWeather API. Includes
+                  descriptive text for weather icons and accessible forecast tables
+                  for screen reader users.
+                </p>
+                <ul
+                  class="skills-list"
+                  role="list"
+                  aria-label="Technologies used"
+                >
+                  <li class="skills-list__item">JavaScript</li>
+                  <li class="skills-list__item">OpenWeather API</li>
+                  <li class="skills-list__item">Fetch API</li>
+                </ul>
+                <p style="margin-top: 1rem">
+                  <a
+                    href="weather.html"
+                    class="card__link"
+                  >
+                    Open live app
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li>
+              <article
+                class="card"
+                id="recipe-finder"
+                aria-labelledby="proj-4-title"
+              >
+                <h3 class="card__title" id="proj-4-title">
+                  Recipe Finder
+                </h3>
+                <p>
+                  Search and filter recipes by cuisine and dietary preference.
+                  Built with semantic article markup and skip links for keyboard users.
+                </p>
+                <ul
+                  class="skills-list"
+                  role="list"
+                  aria-label="Technologies used"
+                >
+                  <li class="skills-list__item">HTML5</li>
+                  <li class="skills-list__item">CSS3</li>
+                  <li class="skills-list__item">TheMealDB API</li>
+                </ul>
+                <p style="margin-top: 1rem">
+                  <a
+                    href="https://github.com/shivamchauhan/recipe-finder"
+                    class="card__link"
+                    rel="noopener noreferrer"
+                  >
+                    View source on GitHub
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li>
+              <article
+                class="card"
+                id="expense-tracker"
+                aria-labelledby="proj-5-title"
+              >
+                <h3 class="card__title" id="proj-5-title">
+                  Expense Tracker
+                </h3>
+                <p>
+                  Personal finance tracker with labeled form inputs, error summaries
+                  announced via role="alert", and a high-contrast data table for
+                  monthly spending breakdowns.
+                </p>
+                <ul
+                  class="skills-list"
+                  role="list"
+                  aria-label="Technologies used"
+                >
+                  <li class="skills-list__item">JavaScript</li>
+                  <li class="skills-list__item">Chart.js</li>
+                  <li class="skills-list__item">Local Storage</li>
+                </ul>
+                <p style="margin-top: 1rem">
+                  <a
+                    href="https://github.com/shivamchauhan/expense-tracker"
+                    class="card__link"
+                    rel="noopener noreferrer"
+                  >
+                    View source on GitHub
+                  </a>
+                </p>
+              </article>
+            </li>
+            <li>
+              <article
+                class="card"
+                id="quiz-app"
+                aria-labelledby="proj-6-title"
+              >
+                <h3 class="card__title" id="proj-6-title">
+                  Accessible Quiz App
+                </h3>
+                <p>
+                  Interactive quiz with radio button groups, fieldset legends,
+                  progress indicators, and keyboard-only navigation throughout
+                  the entire flow.
+                </p>
+                <ul
+                  class="skills-list"
+                  role="list"
+                  aria-label="Technologies used"
+                >
+                  <li class="skills-list__item">HTML5</li>
+                  <li class="skills-list__item">CSS3</li>
+                  <li class="skills-list__item">JavaScript</li>
+                </ul>
+                <p style="margin-top: 1rem">
+                  <a
+                    href="https://github.com/shivamchauhan/quiz-app"
+                    class="card__link"
+                    rel="noopener noreferrer"
+                  >
+                    View source on GitHub
+                  </a>
+                </p>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container site-footer__inner">
+        <p class="site-footer__copy">
+          &copy; 2026 Shivam Chauhan. All rights reserved.
+        </p>
+        <nav aria-label="Footer navigation">
+          <ul class="site-footer__nav-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="todo.html">To-Do</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="https://github.com/shivamchauhan" rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/shivamchauhan"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

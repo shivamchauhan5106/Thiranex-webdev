@@ -1,0 +1,26 @@
+import { initWeatherApp } from "../features/weather.js";
+
+var WEATHER_HTML =
+  '<div class="container"><header class="section__header"><p class="section__subtitle">Live Data</p><h1>Weather Dashboard</h1></header>' +
+  '<section id="weather-app" class="weather-app"><div id="weather-live-region" class="sr-only" aria-live="polite"></div>' +
+  '<form id="weather-search-form" class="weather-search" aria-label="Search weather by city">' +
+  '<label for="weather-city-input" class="form__label">City name</label>' +
+  '<div class="weather-search__row"><input type="search" id="weather-city-input" class="form__input weather-search__input" required placeholder="e.g. Mumbai, London">' +
+  '<button type="submit" id="weather-search-btn" class="btn btn--primary">Get Weather</button></div></form>' +
+  '<p id="weather-loading" class="weather-status weather-status--loading" hidden role="status">Fetching weather data…</p>' +
+  '<p id="weather-error" class="weather-status weather-status--error" hidden role="alert"></p>' +
+  '<article id="weather-dashboard" class="weather-dashboard" hidden aria-labelledby="weather-city-name">' +
+  '<header class="weather-dashboard__header"><div><h2 id="weather-city-name" class="weather-dashboard__city"></h2>' +
+  '<p id="weather-country" class="weather-dashboard__country"></p></div><p id="weather-condition" class="weather-dashboard__condition"></p></header>' +
+  '<p id="weather-updated" class="weather-dashboard__updated"></p>' +
+  '<dl class="weather-metrics"><div class="weather-metric"><dt class="weather-metric__label">Temperature</dt>' +
+  '<dd class="weather-metric__value"><span id="weather-temperature"></span><span id="weather-temp-unit"></span></dd></div>' +
+  '<div class="weather-metric"><dt class="weather-metric__label">Humidity</dt><dd class="weather-metric__value" id="weather-humidity"></dd></div>' +
+  '<div class="weather-metric"><dt class="weather-metric__label">Wind Speed</dt>' +
+  '<dd class="weather-metric__value"><span id="weather-wind"></span> <span id="weather-wind-unit"></span></dd></div></dl>' +
+  '<p id="weather-feels-like" class="weather-dashboard__feels-like"></p></article></section></div>';
+
+export function renderWeather(main) {
+  main.innerHTML = WEATHER_HTML;
+  return initWeatherApp();
+}

@@ -1,0 +1,17 @@
+{
+  "name": "thiranex-capstone",
+  "version": "1.0.0",
+  "description": "Shivam Chauhan — Thiranex Web Development Capstone SPA",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "npx --yes serve dist -l 4173",
+    "deploy:netlify": "npm run build && npx --yes netlify-cli deploy --prod --dir=dist",
+    "deploy:vercel": "npm run build && npx --yes vercel --prod"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "terser": "^5.37.0"
+  }
+}
