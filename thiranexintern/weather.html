@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shivam Chauhan's Weather Dashboard — live temperature, humidity, and wind speed fetched via REST API.">
+  <meta name="author" content="Shivam Chauhan">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shivamchauhan.dev/weather.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Weather Dashboard | Shivam Chauhan">
+  <meta property="og:description" content="Real-time weather metrics by city using async JavaScript and public REST APIs.">
+  <meta property="og:url" content="https://shivamchauhan.dev/weather.html">
+
+  <title>Weather Dashboard | Shivam Chauhan — Web Developer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo" aria-label="Shivam Chauhan — Home">
+        Shivam Chauhan
+      </a>
+      <nav class="site-nav" role="navigation" aria-label="Primary navigation">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="about.html" class="site-nav__link">About</a></li>
+          <li><a href="projects.html" class="site-nav__link">Projects</a></li>
+          <li><a href="todo.html" class="site-nav__link">To-Do</a></li>
+          <li><a href="weather.html" class="site-nav__link" aria-current="page">Weather</a></li>
+          <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <div class="container">
+      <header class="section__header">
+        <p class="section__subtitle">Live Data</p>
+        <h1>Weather Dashboard</h1>
+        <p>
+          Search any city to fetch real-time weather from a public REST API.
+          Data includes temperature, humidity, wind speed, and conditions.
+        </p>
+      </header>
+
+      <section id="weather-app" class="weather-app" aria-labelledby="weather-heading">
+        <h2 id="weather-heading" class="sr-only">Weather search and results</h2>
+
+        <div id="weather-live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+        <form id="weather-search-form" class="weather-search" aria-label="Search weather by city">
+          <label for="weather-city-input" class="form__label">City name</label>
+          <div class="weather-search__row">
+            <input
+              type="search"
+              id="weather-city-input"
+              class="form__input weather-search__input"
+              name="city"
+              placeholder="e.g. London, Mumbai, New York"
+              autocomplete="off"
+              required
+              aria-describedby="weather-search-hint"
+            >
+            <button type="submit" id="weather-search-btn" class="btn btn--primary">
+              Get Weather
+            </button>
+          </div>
+          <p id="weather-search-hint" class="form__hint">
+            Press Enter or click Get Weather to fetch live data.
+          </p>
+        </form>
+
+        <p id="weather-loading" class="weather-status weather-status--loading" hidden role="status">
+          Fetching weather data…
+        </p>
+
+        <p id="weather-error" class="weather-status weather-status--error" hidden role="alert"></p>
+
+        <article
+          id="weather-dashboard"
+          class="weather-dashboard"
+          hidden
+          aria-labelledby="weather-city-name"
+        >
+          <header class="weather-dashboard__header">
+            <div>
+              <h3 id="weather-city-name" class="weather-dashboard__city"></h3>
+              <p id="weather-country" class="weather-dashboard__country"></p>
+            </div>
+            <p id="weather-condition" class="weather-dashboard__condition"></p>
+          </header>
+
+          <p id="weather-updated" class="weather-dashboard__updated"></p>
+
+          <dl class="weather-metrics" aria-label="Current weather metrics">
+            <div class="weather-metric">
+              <dt class="weather-metric__label">Temperature</dt>
+              <dd class="weather-metric__value">
+                <span id="weather-temperature"></span><span id="weather-temp-unit"></span>
+              </dd>
+            </div>
+            <div class="weather-metric">
+              <dt class="weather-metric__label">Humidity</dt>
+              <dd class="weather-metric__value" id="weather-humidity"></dd>
+            </div>
+            <div class="weather-metric">
+              <dt class="weather-metric__label">Wind Speed</dt>
+              <dd class="weather-metric__value">
+                <span id="weather-wind"></span> <span id="weather-wind-unit"></span>
+              </dd>
+            </div>
+          </dl>
+
+          <p id="weather-feels-like" class="weather-dashboard__feels-like"></p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">&copy; 2026 Shivam Chauhan. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="site-footer__nav-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="todo.html">To-Do</a></li>
+          <li><a href="weather.html" aria-current="page">Weather</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/shivamchauhan" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/shivamchauhan" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/weather-app.js" defer></script>
+</body>
+</html>
